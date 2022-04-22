@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant search near you</title>
+    <style>
+        .header{
+           background-color:#ce0505;
+           height: 80px;
+        }
+        .circle{
+            border-radius:50%;
+            border:#ce0505;
+            background-color: white;
+            text-align: center;
+            color: #ce0505;
+            font-size:55px;
+            margin-right: 1800px;
+            height: 70px;
+            width: 70px;
+            margin-left: 25px;
+            margin-top: 5px;
+         }
+        .heading{
+            font-size: 36px;
+            font-weight: bold;
+            color: #192f60;
+            padding-left: 50px;
+            }
+        .login{
+            color: white;
+            background-color: transparent;
+            font-size: 30px ;
+            border: 0px;
+           }
+           .account{
+            color: white;
+            border-style: solid ;
+            border: 50% ;
+            background-color: transparent;
+            border-color: white; 
+            font-size: 25px;
+           }
+           .filter{
+               height: 950px;
+               width: 260px;
+               background-color: white;
+               box-shadow: 0px 3px 6px #00000029;
+               padding-left: 30px;
+           }
+           .location{
+               height: 35px;
+               width: 208px;
+               border: 1px solid #8C96AB;
+               border-radius: 3px;
+               opacity: 1;
+               color: #8C96AB;
+           }
+           .cuisine{
+                 font-size: 20px;
+                 color: #8C96AB;
+                 accent-color:#3A5075;
+                
+            }
+            .cost{
+                color: #8C96AB;
+                font-size: 20px;
+                accent-color:#3A5075;
+            }
+            .sort_price{
+                color: #8C96AB;
+                font-size: 20px;
+                accent-color:#3A5075;
+            }
+            .search_result{
+                background-color: white;
+                box-shadow: 0px 3px 6px #00000029;
+                height: 400px;
+                width: 1000px;
+                position: absolute;
+                top: 270px;
+                left: 418px;
+            }
+            .bake_shop{
+                background-color: white;
+                box-shadow: 0px 3px 6px #00000029;
+                height: 400px;
+                width: 1000px;
+                position: absolute;
+                top: 700px;
+                left: 418px;
+            }
+            a{
+                width: 400px;
+                height: 350px;
+                background-color: white;
+                border: 3px grey solid;
+                text-decoration: none;
+                padding: 10px;
+                border-radius: 7px;
+                font-size: 30px;
+                color:  #8C96AB;
+            }
+            .pagination{
+                position: absolute;
+                left: 680px;
+                top: 1150px;
+            }
+    </style>
+</head>
+<body>
+     <div class="header">
+         <div class="circle" style="display:inline-block;" top: 16px;left: 112px; width: 32px;height: 47px; > e!</div>
+         <div style="display: inline-block;">
+             <button class="login">Login</button>
+             <button class="account">Create an account </button>
+        </div>
+     </div>
+     <div class="heading"> <h1>Breakfast Places in Mumbai</h1> </div>
+     <div class="filter"><h2 style="color: #192F60;padding-top: 10px; font-size: 26px;" >Filters</h2>
+         <h4 style="font-size: 22px;"> Select Location</h4>
+         <select class="location">
+            <option selected>Select Location</option>>
+            <option value="Beawar">Beawar</option>
+            <option value="Ajmer">Ajmer</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Bhilwara">Bhilwara</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+         </select>
+         <h4 style="color: #192F60;font-size: 20px">Cuisine</h4>
+            <div class="cuisine">
+               <input type="checkbox" name="Cuisine"> North Indian <br/> <br/>
+               <input type="checkbox" name="Cuisine"> South Indian <br/> <br/>
+               <input type="checkbox" name="Cuisine"> Chinese <br/> <br/>
+               <input type="checkbox" name="Cuisine"> Fast Food <br/> <br/>
+               <input type="checkbox" name="Cuisine"> Street Food <br/> <br/>
+        </div>
+         <h4 style="color: #192F60;font-size: 20px"> Cost For Two </h4>
+            <div class="cost">
+                <input type="radio" name="price"> Less than 500 <br/><br/>  
+                <input type="radio" name="price"> `500 to `1000 <br/> <br/>
+                <input type="radio" name="price"> `1000 to `1500 <br/><br/>
+                <input type="radio" name="price"> `1500 to `2000 <br/><br/>
+                <input type="radio" name="price">  `2000+ <br/><br/>
+            </div>
+        <h2> Sort </h2>
+            <div class="sort_price">
+               <input type="radio" name="price sort"> Price Low To high <br/><br/>
+               <input type="radio" name ="price sort"> Price High To Low <br/><br/>
+            </div> 
+    </div>     
+    <div class="search_result">
+        <img src ="/images/shutterstock_1154073754.png " height="150px"width="150px "style="padding: 50px;border-radius:70px;"> 
+         <h1 style="width: 450px; height: 25px;color: #192F60;font-size: 45px;position: absolute;top: 50px;left: 250px;">The Big Chill Cakery</h1>
+         <h6 style= "color: #192F60;font-size: 20px;position: absolute;top: 282px; left: 619px;top: 100px;left: 250px">FORT</h6>
+         <p style="color: #636F88;font-size:20px; width: 450px;position: absolute;top: 160px;left: 250px"> Shop 1, Plot D, Samruddhi Complex, Chincholi … </p>
+         <hr style="top: 371px;left: 453px;width:800px; height: 0px;" />
+         <div style="top: 397px;left: 458px;width: 140px;height: 118px;color: #636F88;font-size: 25px;padding-left: 50px;"> CUISINES: COST FOR TWO:</div>
+         <div style="top: 288px;left: 250px; position: absolute;width: 251px;height: 69px;font-size: 25px;color: #192F60;">Bakery <br> ₹700</div>
+    </div>
+    <div class="bake_shop">
+         <img src="/images/image1.png" height="150px" width="150px" top: 545px; left: 453px; style="padding:50px ;border-radius:70px">
+         <h1 style="width: 450px; height: 25px;color: #192F60;font-size: 45px;position: absolute;top: 50px;left: 250px;">The Bake Shop</h1>
+         <h6 style= "color: #192F60;font-size: 20px;position: absolute;top: 282px; left: 619px;top: 100px;left: 250px">FORT</h6>
+         <p style="color: #636F88;font-size:20px; width: 450px;position: absolute;top: 160px;left: 250px"> Shop 1, Plot D, Samruddhi Complex, Chincholi … </p>
+         <hr style="top: 371px;left: 453px;width:800px; height: 0px;" />
+         <div style="top: 397px;left: 458px;width: 140px;height: 118px;color: #636F88;font-size: 25px;padding-left: 50px;"> CUISINES: COST FOR TWO:</div>
+         <div style="position: absolute;top: 300px;left: 250px ; width:140px;height:118px;color: #192F60;font-size: 25px;">Bakery <br>₹700</div>
+    </div>
+    <div class="pagination">
+        <a href ="#"><</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#"><</a>
+               
+    </div>
+</body>
+</html>
